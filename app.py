@@ -23,9 +23,9 @@ if query:
         st.subheader(data["title"])
         image_url = data.get("primaryImageSmall")  
         if image_url:  
-        st.image(image_url, width=300)  
+            st.image(image_url, width=300)  
         else:  
-        st.info("No image available for this artwork.")  
+            st.info("No image available for this artwork.")  
         st.write(f"Artist: {data.get('artistDisplayName', 'Unknown')}")  
         st.write(f"Year: {data.get('objectDate', 'Unknown')}")  
         st.write(f"Artist: {data.get('artistDisplayName')}")
